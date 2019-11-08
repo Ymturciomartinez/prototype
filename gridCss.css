@@ -1,0 +1,53 @@
+
+
+html, body {
+    background-color: #F7EEF5;
+    margin: 20px;
+}
+
+.sticknav{
+    background-color: #168475;
+    overflow: hidden;
+}
+
+.sticknav a {
+    float: left;
+    display: flex;
+    color: #F7EEF5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sticknav a:hover {
+    background-color: #E26375;
+    color: #F7EEF5;
+}
+
+.sticknav a.active {
+    background-color: #E26375;
+    color: #F7EEF5;
+    text-emphasis: bold;
+}
+
+.profile-img {
+    border-radius: 10in;
+    width: 320px;
+   }
+   
+   footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#A4EADA;
+    color:#168475;
+    text-align: center;
+   }
+
+footer ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+

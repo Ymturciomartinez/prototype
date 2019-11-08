@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Prototype Portfolio Webpage: Homepage</title>
+        <link rel="stylesheet" href="prototype_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+            <header>
+                <div class="sticknav" id="TopNav">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#work">Work</a>
+                    <a href="#education">Education</a>
+                    <a href="pcontact.html">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i></a>
+                </div>
+            <!-------SCRIPT---------->
+            <script>
+                function myFunction() {
+                var x = document.getElementById("TopNav");
+                 if (x.className === "sticknav") {
+                 x.className += " responsive";
+                } else {
+                 x.className = "sticknav";
+                     }
+                }
+            </script>
+            <!---------END SCRIPT--->
+            </header>
+
+
+    <!----------CONTACT FORM------------>
+            <form class="contact">
+                <label for="fname"> First Name? </label>
+                <input type="text" placeholder="Your name..">
+
+                <label for="lname"> Last Name? </label>
+                <input type="text" placeholder="Your last name..">
+
+                <label for="phone"> Number? </label>
+                <input type="tel" placeholder="Your number..">
+
+                <label for="email"> Email? </label>
+                <input type="email" placeholder="Your email address..">
+
+                <label for="subject"> Subject? </label>
+                <input type="text" placeholder="Subject..">
+
+                <label for="message"> Details? </label>
+                <textarea style="height :200px" placeholder="Your message.."></textarea>
+
+                <label for="aInterest"> Area of Interest? </label>
+                <input type="radio" >Web Design</option>
+                <input type="radio">Web Development</option>
+                <input type="radio">Usability Testing</option>
+                <input type="radio">Graphic Design</option>
+                <input type="radio">Image Optimization</option>
+                <input type="radio">UX Design</option>
+
+                <input type="submit">
+
+
+            </form>

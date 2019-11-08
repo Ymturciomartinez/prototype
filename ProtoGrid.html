@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Prototype Portfolio Webpage: Homepage</title>
+        <link rel="stylesheet" href="gridCss.css">
+        <link rel="stylesheet" href="printStyle.css">
+
+    <style>
+        body { 
+        display: grid;
+        
+        grid-template-areas: 
+            "nav nav"
+            "picture desc "
+            "footer footer";
+        grid-template-rows: 8% 70% 10% ;
+        grid-template-columns: 30% auto ;
+        grid-gap: 30px;
+        height: 95vh;
+        margin: 5px;
+        }
+        
+        header, article, nav, div {
+         padding: 5px;
+        background-color:#168475;
+        }
+
+        footer {
+            background-color:#A4EADA ;
+        }
+       
+        }
+        #pageFooter {
+            grid-area: footer;
+            display: grid;
+        }
+        #picDet{ 
+            grid-area: desc;      
+         }
+        #mainNav { 
+            grid-area: nav; 
+            display: grid;
+            }
+        #sidePic { 
+            grid-area: picture; 
+            }
+       
+           
+        </style>
+
+    </head>
+
+    <body>
+           
+            
+            <nav id="mainNav">
+                <div class="sticknav" id="TopNav">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#work">Work</a>
+                    <a href="#education">Education</a>
+                    <a href="pcontact.html">Contact</a>
+                </div>
+            </nav>
+            <picture id="sidePic">
+                    <img class="profile-img col-narrow" src="images/911_INTERN.jpg" alt="girl with longhair taking smiling for a photo with 3 other police officers">
+            </picture>
+            <details open id="picDet">
+                <h1>Jess Martinez</h1>
+                <h2>Student</h2>
+                <p>Insert the about me description.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum, mi sed lacinia aliquet, nisi nisi lacinia lacus, vel accumsan turpis eros feugiat nisi. Nulla dolor felis, pellentesque ac elementum sit amet, consectetur et diam. Etiam sit amet mattis lacus. Nulla facilisi. Maecenas scelerisque, tellus sit amet vulputate posuere, ex erat dignissim nibh, in semper diam leo eu enim. Ut fermentum ligula sit amet magna accumsan, sed tristique leo laoreet. Ut eget eros orci. Proin eu porta sem. Sed et orci feugiat, molestie odio sed, dignissim orci. Duis imperdiet ex sit amet mi scelerisque, ultrices aliquam elit accumsan. In mollis libero odio, ac luctus odio gravida tincidunt. Nulla tincidunt sed felis sit amet imperdiet. Donec pretium non nisi ut porta.</p>
+            </details>
+            <footer id="pageFooter"><footer> <ul>
+                    <li><p>Contact information: <a href="mailto:someone@example.com">
+                    jessmartinez@example.com</a>.</p></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
+                        <span class="sr-only">Battery level: 50%</span></a></li>
+                        <li><a href="#" target="_blank">LinkedIn</a></li>
+                        <li><a href="#" target="_blank">Facebook</a></li>
+                        <li><p> &copy Copyright 2017 by Jessi Martinez</p></li>
+                </ul></footer>
+    </body>
+</html>

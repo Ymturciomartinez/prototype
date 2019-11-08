@@ -110,3 +110,60 @@ footer ul {
     text-decoration: none;
     list-style-type: none;
 }
+
+/*-------------CONTACT----------*/
+input[type=text], select, textarea 
+{
+width: 100%;
+
+border: 1px solid #168475;
+box-sizing: border-box;
+margin: 10px;
+}
+
+.contact{
+    border-radius: 5px;
+    background-color: #A4EADA;
+    padding: 10px;
+    margin-left: .3in;
+    margin-right: .3in;
+    margin-top: .6in;
+    overflow: hidden;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type="tel"]{
+  flex-flow: row;
+}
+
+input[type="email"]{
+ flex-flow: row;
+ flex: 2 0 5px;
+}
+
+input[type="text"]{
+flex-flow: row;
+flex: 3 0 15px;
+}
+
+textarea{
+flex: auto;
+flex-flow: row;
+justify-self: left;
+}
+
+input[type="submit"]{
+flex: 1 0 2px;
+flex-wrap: wrap;
+align-self: flex-end;
+flex-direction: row;
+}
+
+input[type="radio"]{
+    flex: 1;
+    flex-flow: row;
+}

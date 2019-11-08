@@ -1,0 +1,29 @@
+@media print {
+    float: none;
+    margin:0;
+    width: 100%;
+
+    body {
+        background-color: white;
+        color: black;
+        font: 12pt Georgia;
+    }
+    img {
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        
+      }
+
+    .profile-img {
+        width: 200px;
+    }
+
+    footer {
+        background-color: white;
+        color: black;
+        font: 12pt Georgia;
+    }
+
+    footer a:link {
+        color: grey;
+    }
